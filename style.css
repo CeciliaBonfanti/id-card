@@ -1,0 +1,111 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.id-card{
+    display: flex;
+    padding: 0 5rem 0 5rem;
+    gap: 5rem;
+    background-color: #d3c6f4;
+    height: 100vh;
+}
+.id-card-img {
+    max-height: 100vh;
+    border-radius: 5rem;
+}
+.id-card-description{
+    align-self:center;
+    max-height: 100vh;
+}
+h1{
+    text-align: center;
+    font-family: 'Homemade Apple', sans-serif;
+    color: #8E00FD;
+    font-size: 5em;
+    margin: 0;
+    transition: color 0.5s ease-in-out;
+}
+h1:hover{
+    color: #973CDE;
+}
+
+p{
+    font-family: Quicksand;
+    font-size: 3em;
+    padding: 2rem 0 3rem 0;
+    margin: 0;
+}
+
+.id-card-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+a {
+    text-decoration: none;
+    border: solid 1px #973CDE;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5rem;
+    background-color: #973CDE;
+    transition: background-color 0.5s ease-in-out;
+    margin-bottom: 3rem;
+}
+
+a:hover {
+    border-color: #8E00FD;
+    background-color: #8E00FD;
+    }
+
+a img {
+    width: 10rem;
+    height: 3rem;
+}
+
+@media (max-width: 1024px){
+    .id-card-img {
+        max-height: 70vh;
+        border-radius: 5rem;
+        align-self:center;
+    }
+}
+@media (max-width: 890px){
+    .id-card-img {
+        max-height: 50vh;
+        border-radius: 5rem;
+    }
+    h1{
+        font-size: 3em;
+        padding-top: 3rem;
+    }
+    p{
+        font-size: 2em;
+    }
+    .id-card-a{
+        gap: 3rem;
+    }
+    a {
+        padding: 0.5rem 1rem;
+    }
+    a img {
+        width: 9rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .id-card {
+      flex-direction: column;
+    }
+    .id-card{
+        padding: 0;
+        gap: 0;
+    }
+    .id-card-description {
+        order: -1;
+    }
+}
