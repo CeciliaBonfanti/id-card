@@ -6,35 +6,32 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .id-card{
     display: flex;
-    padding: 0 5rem 0 5rem;
-    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7rem 0 7rem;
+    gap: 7rem;
     background-color: #d3c6f4;
     height: 100vh;
 }
+
 .id-card-img {
-    max-height: 100vh;
+    max-height: 80vh;
     border-radius: 5rem;
 }
-.id-card-description{
-    align-self:center;
-    max-height: 100vh;
-}
+
 h1{
     text-align: center;
     font-family: 'Homemade Apple', sans-serif;
     color: #8E00FD;
     font-size: 5em;
     margin: 0;
-    transition: color 0.5s ease-in-out;
-}
-h1:hover{
-    color: #973CDE;
 }
 
 p{
-    font-family: Quicksand;
+    font-family: 'Quicksand', sans-serif;
     font-size: 3em;
     padding: 2rem 0 3rem 0;
     margin: 0;
@@ -44,68 +41,56 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
-}
-a {
-    text-decoration: none;
-    border: solid 1px #973CDE;
-    padding: 0.7rem 1.5rem;
-    border-radius: 5rem;
-    background-color: #973CDE;
-    transition: background-color 0.5s ease-in-out;
-    margin-bottom: 3rem;
-}
-
-a:hover {
-    border-color: #8E00FD;
-    background-color: #8E00FD;
-    }
-
-a img {
-    width: 10rem;
-    height: 3rem;
+    gap: 10rem;
 }
 
 @media (max-width: 1024px){
-    .id-card-img {
-        max-height: 70vh;
-        border-radius: 5rem;
-        align-self:center;
-    }
-}
-@media (max-width: 890px){
-    .id-card-img {
-        max-height: 50vh;
-        border-radius: 5rem;
+    .id-card{
+        padding: 0 5rem 0 5rem;
+        gap: 5;
     }
     h1{
-        font-size: 3em;
+        font-size: 4em;
         padding-top: 3rem;
     }
     p{
-        font-size: 2em;
+        font-size: 2.5em;
     }
-    .id-card-a{
+}
+
+@media (max-width: 890px){
+    .id-card{
         gap: 3rem;
     }
-    a {
-        padding: 0.5rem 1rem;
+    .id-card-img {
+        max-height: 60vh;
     }
-    a img {
-        width: 9rem;
-        height: 2rem;
+    h1{
+        font-size: 3em;
+    }
+    p{
+        font-size: 2em;
     }
 }
 
 @media (max-width: 680px) {
     .id-card {
-      flex-direction: column;
-    }
-    .id-card{
+        flex-direction: column;
         padding: 0;
         gap: 0;
     }
     .id-card-description {
         order: -1;
+        margin: 1.5rem;
+    }
+    .id-card-a{
+        gap: 5rem;
+        margin-top: 1rem;
+    }
+    .id-card-img {
+        max-height: 40vh;
+    }
+    h1, p{
+        padding: 0;
     }
 }
